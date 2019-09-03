@@ -9,4 +9,8 @@ public class Probability {
     public double findNonOccuringEventProbability() {
         return (1-occuringProbability);
     }
+
+    public double findProbabilityOfTwoEventsOccuringTogether() {
+        return (occuringProbability*occuringProbability);
+    }
 }

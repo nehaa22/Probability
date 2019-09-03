@@ -13,4 +13,13 @@ public class ProbabilityTest {
         Probability probability = new Probability(0.5);
         assertEquals(0.5,probability.findNonOccuringEventProbability());
     }
+
+
+    @Test
+    void givenTwoEventsOccurTogether_WhenCalculatedProbability_ThenReturnResult()
+    {
+        Probability probability = new Probability(0.5);
+        assertEquals(0.25,probability.findProbabilityOfTwoEventsOccuringTogether());
+    }
+
 }
